@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Css file link-->
+    <link rel="stylesheet" href="style.css">
+    <!--for font family-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+    <!--Font Awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Javascript Animation Plugins Cdn Used -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <!--Main page here-->
+    <div class="nav_main">
+        <nav>
+            <div class="portfolio_heading" data-aos="fade-right">
+                <p>Portfolio </p>
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu_btn"><i class="fa fa-bars"></i></label>
+            <ul data-aos="fade-left" id="navbar">
+                <li> <a href="#" onclick="uncheck()">Home </a></li>
+                <li> <a href="#about" class="click" onclick="uncheck()">About</a></li>
+                <li><a href="#service" onclick="uncheck()">Service </a></li>
+                <li><a href="#skill" onclick="uncheck()">Skills </a></li>
+                <li><a href="#contact" onclick="uncheck()">Contact </a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="Short_intro" data-aos="fade-right">
+                <p>Hello, My Name is</p>
+                <h2>Rashid Ahmad</h2>
+                <h3>And I'm a
+                    <p class="scroll"><b>Software Developer</b> </p>
+                </h3>
+            </div>
+            <img src="images/pr2.png" alt="Rashid Portfolio" data-aos="fade-out">
+        </main>
+    </div>
+
+    <!--About Page here-->
+    <section id="about">
+        <h2 data-aos="fade-right">About Me</h2>
+        <div class="section_div">
+            <img src="images/about.png" alt="My name is Rashid" data-aos="fade-right">
+            <div class="about" data-aos="fade-left">
+                <h1>I'm Rashid Ahmad and I'm</h1>
+                <p>
+                    From Mumbai. I have completed BSc(IT) from Mumbai University in 2020. I have a very good understanding in Python, Html , CSS, Javascript, C#, SQL, Django, jquery etc and I am a passionate coder and Fast learner with very good logical and creative skills
+                    and I'm a state level scholership holder. I have participated an inspire Program at IIIT(Indian Institute Of Information Technology) Allahabad which is organized by state government.Visit to see my coding skills and other mini projects
+                    on github.com <br> <b> Link : <a href="https:/github.com/RashidAhmadMansoori" 
+                    Target="_blank">https:/github.com/RashidAhmadMansoori/</a></b>
+                </p>
+                <a href="mailto:rashidahmad0796@gmail.com" target="_blank"><Button type="button"> Hire Me</Button></a>
+            </div>
+        </div>
+    </section>
+
+    <!--Section Page here-->
+    <div class="service" id="service">
+        <h1 data-aos="flip-down">My Services</h1>
+        <div class="myservices" id="box" data-aos="flip-down">
+            <div class="web-service" id="box">
+                <i class="fa fa-gears box-icon" style="font-size:48px;color:red"></i>
+                <h3>Web Developement</h3>
+                <p>I write more scable, reusable, clean and responsive code in modern technology like Python&nbsp;
+                    <a href="#" class="readmore">read more...</a>
+                </p>
+            </div>
+            <div class="web-scraping" id="box"><i class="fa fa-plug box-icon" style="font-size:48px;color:red"></i>
+                <h3>Web Scrapping</h3>
+                <p>I'm using Python language and beatifulsoup liberary for web-scraping &nbsp;<a href="#" class="readmore">read more...</a>
+            </div>
+            <div class="app-service" id="box"><i class="fa fa-mobile-phone box-icon" style="font-size:48px;color:red"></i>
+                <h3>App Developement</h3>
+                <p>Highly scalable and more reusable code with modern technology and awesome &nbsp;<a class="readmore">read more...</a>
+            </div>
+        </div>
+    </div>
+
+    <!--skill page here-->
+    <div class="skill" id="skill">
+        <h1 data-aos="flip-down">My Skills</h1>
+        <div class="myskill">
+            <div class="experience" data-aos="fade-right">
+                <h2>I'm Rashid Ahmad and I've</h2>
+                <p>
+                    good understanding in Html, CSS, Javascript, Python, Django, C#, C++. I have created so many projects to use these skills and I would like to build my career as a successful full stack developer and willingness to learn in making an orgnization successful
+                    with national and international perspective and standard.
+                </p>
+            </div>
+            <div class="progressbar" data-aos="fade-left">
+                <h3>Html - 70%</h3>
+                <progress class="file" value="70" max="100"> 70% </progress>
+                <h3>CSS - 60%</h3>
+                <progress class="file" value="60" max="100"> 60% </progress>
+                <h3>Javascript - 50%</h3>
+                <progress class="file" value="50" max="100"> 50% </progress>
+                <h3>Bootstrap - 60%</h3>
+                <progress class="file" value="60" max="100"> 60% </progress>
+                <h3>Python - 70%</h3>
+                <progress class="file" value="70" max="100"> 70% </progress>
+            </div>
+        </div>
+    </div>
+
+    <!--Contact page here-->
+    <section id="contact">
+        <div class="contact">
+            <div class="title">
+                <h1 data-aos="zoom-in-up">Contact Me</h1>
+            </div>
+            <div class="address">
+                <div class="get_in_touch" data-aos="zoom-in-right">
+                    <h1>Reach Me</h1>
+                    <a class="fa fa-user fa-2x"></a>&nbsp;&nbsp;<b>Rashid Ahmad</b><br>
+                    <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>&nbsp;&nbsp; <b>Mumbai Narayan Nagar 400086
+                                </b><br>
+                    <i class="fa fa-envelope fa-2x"></i>&nbsp; <b>rashidahmad0796@gmail.com</b>
+                </div>
+                <div class="msg" data-aos="zoom-in-left">
+                    <h1>Get In Touch</h1>
+                    <a href="https://www.linkedin.com/in/rashid-ahmad-a62b071b1" target="_blank" class="fa fa-linkedin"></a>
+                    <a href="https:/github.com/RashidAhmadMansoori" target="_blank" class="fa fa-github"></a>
+                    <a href="https://gmail.com" target="_blank" class="fa fa-google"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer page here-->
+    <footer>
+        <div class="footer">
+            <p>Created By Rashid Ahmad | &COPY; 2021 All Right Reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+
+<!--Javascript Animation Plugins Used -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 200,
+        duration: 2000,
+    });
+</script>
+
+<!--Javascript code for navbar hide -->
+<script>
+    function uncheck() {
+        document.getElementById("click").checked = false;
+    }
+</script>
+
+</html>

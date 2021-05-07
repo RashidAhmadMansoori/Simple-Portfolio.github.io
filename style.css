@@ -1,0 +1,514 @@
+ * {
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+     font-family: Arial, sans-serif;
+ }
+ /* To remove the vertical scrollbar */
+ 
+ ::-webkit-scrollbar {
+     display: none;
+ }
+ 
+ body {
+     overflow-x: hidden;
+ }
+ /* Main page start here */
+ 
+ .portfolio_heading {
+     font-family: 'Original Surfer', cursive;
+     font-size: 3vw;
+     font-weight: 600;
+     color: white;
+ }
+ 
+ .nav_main {
+     background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(255, 99, 71, 0)), url('images/portfolio_image.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     width: 100vw;
+     height: 100vh;
+ }
+ 
+ main {
+     width: 100vw;
+     height: 90vh;
+     display: flex;
+     justify-content: space-between;
+     padding: 30vh 0vh 0vh 8vh;
+ }
+ 
+ main img {
+     width: 24%;
+     height: 90vh;
+     margin: -30vh 0vh 0vh 0vh;
+     background-color: transparent;
+ }
+ 
+ main .Short_intro {
+     font-family: 'Original Surfer', cursive;
+     font-size: 1.7vw;
+     font-weight: 600;
+     color: white;
+     padding-left: 5vw;
+ }
+ 
+ main .Short_intro h2 {
+     padding: 0vh 1vw 1vw 0vw;
+ }
+ 
+ main .Short_intro h3 {
+     display: flex;
+ }
+ 
+ main .Short_intro h3 .scroll {
+     width: 0ch;
+     overflow: hidden;
+     white-space: nowrap;
+     border-right: 5px solid red;
+     animation: text 12s steps(16) infinite alternate;
+     padding: 0vw 0vw 0vw 1vw;
+     color: red;
+ }
+ 
+ @keyframes text {
+     0% {
+         width: 0ch;
+     }
+     50% {
+         width: 16ch;
+     }
+ }
+ 
+ nav {
+     width: 100vw;
+     height: 10vh;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0vh 10vw 0vw 10vw;
+ }
+ 
+ nav ul {
+     display: flex;
+     list-style: none;
+ }
+ 
+ nav ul li {
+     margin: 1vw;
+ }
+ 
+ nav ul li a {
+     color: white;
+     text-decoration: none;
+     font-size: 1.7vw;
+     font-weight: 500;
+     letter-spacing: 1px;
+     border-radius: 5px;
+ }
+ 
+ nav ul li a:hover {
+     background-color: rgb(38, 43, 38);
+     box-shadow: 0 10px 3px 3px rgba(202, 197, 197, 0.979), 0 0px 30px 0 rgba(230, 230, 236, 0.897);
+     font-size: 2vw;
+     font-weight: 600;
+ }
+ 
+ nav .menu_btn i {
+     color: white;
+     font-size: 5vw;
+     cursor: pointer;
+     text-align: left;
+     display: none;
+ }
+ 
+ #click {
+     display: none;
+ }
+ /*About Section Start Here*/
+ 
+ section h2 {
+     text-align: center;
+     padding-top: 5vw;
+     font-size: 2.5vw;
+     font-weight: 700;
+ }
+ 
+ .section_div {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 3vw 10vw 0vw 10vw;
+ }
+ 
+ section .about {
+     font-size: 1.3vw;
+     font-weight: 500;
+     padding: 0vw 0vw 0vw 5vw;
+     font-family: Helvetica, sans-serif;
+ }
+ 
+ section .about p {
+     font-size: 1.2vw;
+     font-weight: 600;
+     color: rgb(112, 106, 106);
+     padding-top: 1vw;
+     text-indent: 3vw;
+     text-align: justify;
+     line-height: 2vw;
+     word-spacing: 0.2vw;
+ }
+ 
+ section .about button {
+     background-color: blueviolet;
+     width: 8vw;
+     height: 6vh;
+     font-size: 1vw;
+     font-weight: 600;
+     border-radius: 5px;
+     margin-top: 2vw;
+     cursor: pointer;
+     color: white;
+ }
+ 
+ section .about button:hover {
+     background-color: white;
+     color: rgb(180, 46, 46);
+     border-color: rgb(180, 46, 46);
+ }
+ 
+ section img {
+     width: 20vw;
+     height: 20vw;
+     border-radius: 20px;
+ }
+ /*Service Page start here*/
+ 
+ .myservices {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     flex-direction: row;
+     margin: 2vw 8.5vw 0vw 8.5vw;
+ }
+ 
+ .service h1 {
+     text-align: center;
+     padding-top: 5vw;
+     font-size: 2.5vw;
+     font-weight: 700;
+ }
+ 
+ .myservices #box {
+     width: 25vw;
+     height: 35vh;
+     background-color: blueviolet;
+     border-radius: 5px;
+     box-shadow: 5px 10px 10px 5px rgba(202, 197, 197, 0.979), 0px 0px 30px 0px rgba(204, 204, 212, 0.897);
+     text-align: center;
+     padding-top: 1vw;
+     line-height: 3vw;
+     color: white;
+ }
+ 
+ .myservices #box .readmore {
+     text-decoration: none;
+     color: greenyellow;
+     font-weight: 700;
+ }
+ 
+ .myservices #box:hover {
+     width: 27vw;
+     height: 37vh;
+     background-color: chocolate;
+     border-radius: 5px;
+     box-shadow: 5px 10px 10px 5px rgba(202, 197, 197, 0.979), 0px 0px 30px 0px rgba(204, 204, 212, 0.897);
+     font-size: 1.5vw;
+     font-weight: 700;
+ }
+ 
+ .myservices i .box-icon {
+     text-align: center;
+ }
+ /*Skill page start here*/
+ 
+ .skill h1 {
+     text-align: center;
+     padding-top: 5vw;
+     font-size: 2.5vw;
+     font-weight: 700;
+ }
+ 
+ .skill .myskill {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     padding: 3vw 10vw 0vw 10vw;
+ }
+ 
+ .skill .myskill .experience p {
+     font-size: 1.2vw;
+     font-weight: 600;
+     line-height: 2vw;
+     color: rgb(112, 106, 106);
+     text-align: justify;
+     word-spacing: 0.2vw;
+ }
+ 
+ .skill .progressbar {
+     margin-left: 5vw;
+     line-height: 2vw;
+ }
+ 
+ .progressbar .file {
+     width: 35vw;
+ }
+ /*Contact Page Start Here*/
+ 
+ section .title {
+     text-align: center;
+     padding-top: 3vw;
+     font-size: 1.7vw;
+     font-weight: 700;
+ }
+ 
+ section .address {
+     display: flex;
+     padding: 3vw 10vw 0vw 10vw;
+     font-size: 1.2vw;
+     font-weight: 600;
+     color: rgb(112, 106, 106);
+     padding-top: 1vw;
+     text-align: justify;
+     word-spacing: 0.2vw;
+     line-height: 4vw;
+ }
+ 
+ section .get_in_touch {
+     width: 70%;
+     padding-right: 5vw;
+ }
+ 
+ section .address .msg .fa {
+     padding: 20px;
+     font-size: 30px;
+     width: 50px;
+     text-align: center;
+     text-decoration: none;
+ }
+ 
+ section .address .msg .fa:hover {
+     background-color: rgb(234, 236, 230);
+     box-shadow: 0 10px 3px 3px rgba(202, 197, 197, 0.979), 0 0px 30px 0 rgba(166, 167, 173, 0.897);
+     font-size: 40px;
+     font-weight: 600;
+     width: auto;
+     height: auto;
+ }
+ /* Footer Start here */
+ 
+ .footer {
+     height: 10vh;
+     background-color: rgb(31, 29, 29);
+     text-align: center;
+     margin-top: 3vw;
+     font-size: 1.7vw;
+     font-weight: 700;
+     color: white;
+     padding-top: 1.5vw;
+ }
+ /* Media Query Start here */
+ 
+ @media (max-width: 1024px) {
+     * {
+         overflow-x: hidden;
+     }
+     /*Main page here */
+     nav ul {
+         position: absolute;
+         top: 10vh;
+         left: -100%;
+         height: 100vh;
+         width: 100vw;
+         background-color: rgb(22, 16, 16);
+         display: block;
+         text-align: center;
+         transition: all 0.3s ease;
+     }
+     #click {
+         display: none;
+     }
+     #click:checked~ul {
+         left: 0%;
+     }
+     .portfolio_heading {
+         font-size: 6vh;
+     }
+     main {
+         padding: 30vh 0vh 0vh 0vh;
+     }
+     nav .menu_btn i {
+         font-size: 6vh;
+     }
+     nav ul li {
+         margin: 80px;
+     }
+     nav {
+         padding: 2vh;
+     }
+     nav .menu_btn i {
+         display: block;
+     }
+     nav ul li a {
+         font-size: 4vh;
+         font-weight: 700;
+         letter-spacing: 4px;
+     }
+     nav ul li a:hover {
+         box-shadow: 0 10px 3px 3px rgba(202, 197, 197, 0.979), 0 0px 30px 0 rgb(236, 237, 247);
+         font-size: 6vh;
+         font-weight: 800;
+     }
+     main img {
+         display: none;
+     }
+     main .Short_intro {
+         font-family: 'Original Surfer', cursive;
+         font-size: 3.5vh;
+         font-weight: 600;
+         color: white;
+         text-align: center;
+     }
+     main .Short_intro h2 {
+         padding: 0vh 1vh 2vh 0vh;
+         width: 100%;
+     }
+     main .Short_intro {
+         width: 100%;
+     }
+     main .Short_intro h3 {
+         display: inline;
+     }
+     main .Short_intro h3 .scroll {
+         margin-left: 8vw;
+     }
+     /*About page start here*/
+     .section_div {
+         display: block;
+         text-align: center;
+     }
+     section h2 {
+         padding-top: 10vh;
+         font-size: 8vw;
+         font-weight: 700;
+     }
+     section .about {
+         padding: 4vw 0vw 0vw 0vw;
+         font-size: 2.3vh;
+         font-weight: 500;
+         color: rgb(228, 101, 101);
+     }
+     section .about p {
+         font-size: 2.7vh;
+         font-weight: 600;
+         word-spacing: 0vh;
+         line-height: 5vh;
+     }
+     section img {
+         width: 37vh;
+         height: 37vh;
+         border-radius: 10px;
+     }
+     section .about button {
+         width: 20vh;
+         height: 6vh;
+         font-size: 2.5vh;
+         font-weight: 600;
+     }
+     /* Contact page Start here*/
+     section .address {
+         display: block;
+         align-items: center;
+         padding: 3vw 5vw 0vw 5vw;
+         font-size: 2.7vh;
+         font-weight: 600;
+         line-height: 5vh;
+     }
+     section .get_in_touch {
+         width: 100%;
+         padding-left: 3vw;
+     }
+     section .title {
+         padding-top: 10vh;
+         font-size: 5vw;
+         font-weight: 700;
+     }
+     section .title p {
+         font-size: 2.2vh;
+     }
+     section .address .msg {
+         padding: 1.5vh;
+     }
+     /*Skill page start here*/
+     .skill .myskill {
+         flex-direction: column;
+         padding: 3vw 10vw 0vw 10vw;
+         font-size: 2.3vh;
+         font-weight: 600;
+         line-height: 4vh;
+     }
+     .skill .myskill .experience p {
+         font-size: 2.7vh;
+         font-weight: 600;
+         line-height: 5vh;
+     }
+     .skill .progressbar {
+         line-height: 2vh;
+         padding: 3vh 0vh 0vw 0vh;
+         line-height: 3.5vh;
+     }
+     .progressbar .file {
+         width: 60vw;
+     }
+     .skill h1 {
+         padding-top: 10vh;
+         font-size: 8vw;
+         font-weight: 700;
+     }
+     /* Service page start here */
+     .myservices {
+         flex-direction: column;
+         justify-content: space-around;
+     }
+     .myservices #box {
+         width: 80vw;
+         height: 35vh;
+         margin: 4vw;
+         font-size: 3vh;
+         font-weight: 600;
+         line-height: 6vw;
+     }
+     .myservices #box:hover {
+         width: 85vw;
+         height: 37vh;
+         background-color: chocolate;
+         font-size: 6vw;
+         font-weight: 800;
+     }
+     .service h1 {
+         padding-top: 10vh;
+         font-size: 8vw;
+         font-weight: 700;
+     }
+     .myservices #box {
+         line-height: 10vw;
+     }
+     /* Footer page start here */
+     .footer {
+         height: 15vh;
+         margin-top: 3vw;
+         font-size: 3vh;
+         font-weight: 550;
+         padding-top: 3.5vh;
+     }
+ }
